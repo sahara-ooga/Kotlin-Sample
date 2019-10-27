@@ -11,16 +11,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        useCoroutines()
+//        useCoroutines()
+        useManyCoroutines()
     }
 }
 
 fun MainActivity.useCoroutines() {
-    runBlocking {//block thread until coroutine finishes. Wait until launch { } ends.
-        launch {// async execution
+    runBlocking {
+        //block thread until coroutine finishes. Wait until launch { } ends.
+        launch {
+            // async execution
             delay(1000L)
             println("World!")
         }
         println("Hello,")
+    }
+}
+
+fun MainActivity.useManyCoroutines() {
+    runBlocking {
+        repeat(100) {
+            launch {
+                delay(1000L)
+                println(".")
+            }
+        }
     }
 }
