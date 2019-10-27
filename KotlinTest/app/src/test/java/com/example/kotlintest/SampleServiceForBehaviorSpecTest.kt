@@ -3,7 +3,7 @@ package com.example.kotlintest
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.specs.BehaviorSpec
 
-class SampleServiceForBehaviorSpecTest: BehaviorSpec() {
+class SampleServiceForBehaviorSpecTest : BehaviorSpec() {
     init {
         val service = SampleService()
         given("executeで") {
@@ -15,5 +15,4 @@ class SampleServiceForBehaviorSpecTest: BehaviorSpec() {
             }
         }
     }
-
 }

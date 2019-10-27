@@ -12,8 +12,4 @@ class SampleServiceForStringSpecTest: StringSpec() {
     }
 }
 
-class SampleService {
-    fun execute(num: Int): String {
-        return "one"
-    }
-}
+
