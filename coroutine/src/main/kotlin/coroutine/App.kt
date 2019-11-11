@@ -3,9 +3,7 @@
  */
 package coroutine
 
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 fun main(args: Array<String>) {
