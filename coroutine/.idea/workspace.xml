@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d30063-2601-46aa-a7eb-b334f9c372e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/coroutine/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/coroutine/AppTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/coroutine/AppTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

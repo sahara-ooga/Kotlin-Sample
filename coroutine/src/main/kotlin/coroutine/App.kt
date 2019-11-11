@@ -4,15 +4,20 @@
 package coroutine
 
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 fun main(args: Array<String>) {
-    println("start")
+    println("Start")
+
+    // Start a coroutine
     GlobalScope.launch {
-        println("coroutine!")
+        delay(1000)//delay() function that's like Thread.sleep(), but better: it doesn't block a thread, but only suspends the coroutine itself.
+        println("Hello")
     }
+
     Thread.sleep(2000) // wait for 2 seconds
-    println("end")
+    println("Stop")
 
     /*実行結果：
     * start
