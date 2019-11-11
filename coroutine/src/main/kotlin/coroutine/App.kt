@@ -3,13 +3,23 @@
  */
 package coroutine
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello world."
-        }
-}
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+    println("start")
+    GlobalScope.launch {
+        println("coroutine!")
+    }
+    Thread.sleep(2000) // wait for 2 seconds
+    println("end")
+
+    /*実行結果：
+    * start
+      coroutine!
+      end
+    *
+    * */
 }
